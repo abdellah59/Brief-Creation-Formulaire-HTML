@@ -118,9 +118,25 @@
                     <td><label for="adresse">Adresse postale :</label></td>
                     <td><input type="text" id="adresse" name="adresse" required></td>
                 </tr>
+                <tr>
+                    <td><label for="codepostal">Code postal :</label></td>
+                    <td><input type="text" id="codepostal" name="codepostal" pattern="[0-9]{5}" maxlength="5" required></td>
+                </tr>
+                <tr>
+                    <td><label for="ville">Ville :</label></td>
+                    <td><input type="text" id="ville" name="ville" required></td>
+                </tr>
+             </table>
 
-
-
+         </fieldset>
+        
+         <br>
+    
+         <fieldset>
+            <legend>Documents Officiels</legend>
+    
+            <br>
+    
               <!-- ajout du Champ Email -->
             <li>
                 <label for="email">Adresse Mail :</label>

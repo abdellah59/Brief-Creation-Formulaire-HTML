@@ -19,6 +19,8 @@ Ce projet contient un formulaire d'inscription simple en HTML. Il permet aux uti
 
 - [Link to the form](formulaire-inscription.html)
 
-## 📄 License
+## Auteurs
 
-Ce projet est sous [MIT License](LICENSE).
+#### Abdellah
+
+- **GitHub**: [Abdellah](https://github.com/abdellah59)

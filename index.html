@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- l'objectif avoir une page adapter au différents appreils et 
+     prise en charge des caractères spéciaux-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+</head> 
+<body>
+    <h1>Formulaire d'Inscription</h1>
+
+<!-- ajout du formulaire form avec l'attribut "action" définit l'URL à laquelle les données sont envoyées. 
+ "method" définit la méthode d'envoi des données -->
+    <form action="#" method="post">
+            
+        <fieldset> <!-- ajout de <fieldset> pour regrouper les  éléments de formulaire et les organiser visuellement-->
+            <legend>Informations Personnelles</legend>
+
+        <!-- l'objectif avoir des champs claires et ordonnés avec la foction table -->
+            <br>
+        
+            <table>
+                <tr>
+                    <td><label for="prenom">Prénom :</label></td>
+                    <td><input type="text" id="prenom" name="prenom" required></td>
+                </tr>
+                <tr>
+                    <td><label for="nom">Nom :</label></td>
+                    <td><input type="text" id="nom" name="nom" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="age">Âge :</label></td>
+            <!-- création du champ avec une zone de saisi de texte age en forme number ave un min et un max-->
+                    <td><input type="number" id="age" name="age" min="0" max="200" required></td>
+                </tr>
+
+            <!-- ajout Champ Sexe avec table et un slecteur d'option pour un avoir un champs plsu ergonomique-->
+                <tr>
+                <td><label for="sexe">Sexe :</label></td>
+                <td>
+                    <select id="sexe" name="sexe" required>
+                        <option value="">-- Sélectionner --</option>
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                        <option value="Autre">Autre</option>
+                        <option value="Non spécifié">Non spécifié</option>
+                    </select>
+                </td>
+                </tr>
+
+                <!-- ajout Champ date et pays de naissance et ntionaité avec table et un slecteur d'option pour un avoir un champs plsu ergonomique-->
+
+                <tr>
+                    <td><label for="dob">Date de naissance :</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pays_naissance">Pays de naissance :</label></td>
+                    <td><input type="text" id="pays_naissance" name="pays_naissance" required></td>
+                </tr>
+
+                <tr>
+                <td><label for="nationalite">Nationalité :</label></td>
+                <td>
+                    <select id="nationalite" name="nationalite" required>
+                        <option value="" disabled>Choisissez une option</option> <!-- champ "Nationalité", proposer évidemment plusieurs propositions avec choix unique et choix par défaut-->
+                        <option value="Française">Française</option>
+                        <option value="Belge">Belge</option>
+                        <option value="Allemande">Allemande</option>
+                        <option value="Espagnole">Espagnole</option>
+                        <option value="Italienne">Italienne</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </td>
+                </tr>
+                
+                <!-- ajout Champ métier avec table et un slecteur d'option pour un avoir un champs plsu ergonomique-->
+
+                <tr>
+                    <td><label for="metier">Métier exercé :</label></td>
+                    <td>
+                        <select id="metier" name="metier" required>
+                            <option value="">-- Sélectionner --</option>
+                            <option value="agriculteur">Agriculteur</option>
+                            <option value="artisan_commercant">Artisan / Commerçant</option>
+                            <option value="cadre">Cadre</option>
+                            <option value="chef_entreprise">Chef d'entreprise</option>
+                            <option value="employe">Employé</option>
+                            <option value="etudiant">Étudiant</option>
+                            <option value="fonctionnaire">Fonctionnaire</option>
+                            <option value="ouvrier">Ouvrier</option>
+                            <option value="profession_libérale">Profession libérale</option>
+                            <option value="retraite">Retraité</option>
+                            <option value="sans_emploi">Sans emploi</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+        
+        <br>
+
+        <fieldset>
+            <legend>Coordonnées</legend>
+       
+        <br>
+        
+            <table>
+                <tr>
+                    <td><label for="email">Adresse Mail :</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="adresse">Adresse postale :</label></td>
+                    <td><input type="text" id="adresse" name="adresse" required></td>
+                </tr>
+                <tr>
+                    <td><label for="codepostal">Code postal :</label></td>
+                    <td><input type="text" id="codepostal" name="codepostal" pattern="[0-9]{5}" maxlength="5" required></td>
+                </tr>
+                <tr>
+                    <td><label for="ville">Ville :</label></td>
+                    <td><input type="text" id="ville" name="ville" required></td>
+                </tr>
+             </table>
+
+         </fieldset>
+        
+         <br>
+    
+         <fieldset>
+            <legend>Documents Officiels</legend>
+    
+            <br>
+            
+            <table>
+                <tr>
+                    <td><label for="secu">Numéro de sécurité sociale :</label></td>
+                    <td><input type="text" id="secu" name="secu" pattern="\d{15}" required></td>
+                </tr>
+                <tr>
+                    <td><label for="passeport">Numéro du passeport :</label></td>
+                    <td><input type="text" id="passeport" name="passeport" required></td>
+                </tr>
+               <tr>
+                    <td><label for="delivrance">Date de délivrance :</label></td>
+                    <td><input type="date" id="delivrance" name="delivrance" required></td>
+                </tr>
+                <tr>
+                    <td><label for="validite">Date de validité :</label></td>
+                    <td><input type="date" id="validite" name="validite" required></td>
+                </tr>
+            </table>
+
+        </fieldset>
+        
+        <br>
+        
+         <button type="submit" style="font-size: 18px; padding: 15px 30px;">S'inscrire</button>
+       
+
+    </form>
+
+</body>
+</html>

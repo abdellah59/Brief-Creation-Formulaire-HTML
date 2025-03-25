@@ -63,7 +63,7 @@
             <li>
                 <label for="codepostal">Code postal :</label>
                 <!-- Champ de texte avec une contrainte sur le format du code postal (5 chiffres) + min et max -->
-                <input type="text" id="codepostal" name="codepostal" pattern="\d{5}" min="0" max="99999" required>
+                <input type="text" id="codepostal" name="codepostal" title="00000" maxlength="5" pattern="[0-9]{5}" required>
             </li>
 
             <li>

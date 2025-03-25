@@ -17,7 +17,7 @@ Ce projet contient un formulaire d'inscription simple en HTML. Il permet aux uti
 
 ## 🚀 Link to the HTML file
 
-- [Link to the form](formulaire-inscription.html)
+- [Link to the form](index.html)
 
 ## Auteurs
 

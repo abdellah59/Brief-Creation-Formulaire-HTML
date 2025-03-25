@@ -7,15 +7,16 @@
      <meta name="viewport" content="width=device", initial-scale="1.0">
 </head>
 <body>
-
     <h1>Formulaire d'Inscription</h1>
 
     <form action="#" method="get">
+            
+        <!-- l'objectif avoir des champs claires et ordonnés avec les tag <ul> <li> -->
         <ul>
            
             <li>
+        <!-- création des champs du formulaire avec une zone de saisi de texte-->
                 <label for="prenom">Prénom :</label>
-                
                 <input type="text" id="prenom" name="prenom" required>
             </li>
 
@@ -24,10 +25,11 @@
                 <input type="text" id="nom" name="nom" required>
             </li>
  <br>
-           
+        <!-- création du champ avec une zone de saisi de texte age en forme number ave un min et un max-->
+
             <li>
                 <label for="age">Âge :</label>
-                <input type="number" id="age" name="age" min="0" required>
+                <input type="number" id="age" name="age" min="0" max="200" required>
             </li>
 
 

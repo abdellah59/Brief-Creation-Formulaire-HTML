@@ -5,11 +5,12 @@ Ce projet contient un formulaire d'inscription simple en HTML. Il permet aux uti
  💻 **Technologies utilisées**
 
 - **HTML5** : Le formulaire est réalisé à 100% avec du HTML5.
+- **VScode** : Editeur utliser pour code en HTML le formulaire.S
 
 ## 🚀 Link to the HTML file
 
 - [Link to the form](formulaire-inscription.html)
-
+c
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).

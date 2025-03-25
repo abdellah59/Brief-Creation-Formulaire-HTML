@@ -51,11 +51,22 @@
                 <input type="email" id="email" name="email" required>
             </li>
 <br>
-<li>
+            <li>
                     <!-- ajout du Champ adresse avec un type texte pour saisir son adresse -->
             <label for="adresse">Adresse postale :</label>
             <input type="text" id="adresse" name="adresse" required>
             </li>
+            
+            <li>
+                <label for="codepostal">Code postal :</label>
+                <!-- Champ de texte avec une contrainte sur le format du code postal (5 chiffres) + min et max -->
+                <input type="text" id="codepostal" name="codepostal" pattern="\d{5}" min="0" max="99999" required>
+            </li>
 
+            <li>
+                <label for="ville">Ville :</label>
+                <input type="text" id="ville" name="ville" required>
+            </li>
+<br>
     </form>
 </body>

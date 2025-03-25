@@ -14,7 +14,7 @@
  "method" définit la méthode d'envoi des données -->
     <form action="#" method="post">
             
-        <fieldset> <!-- ajout de <fieldset>  pour regrouper les  éléments de formulaire et les organiser visuellement-->
+        <fieldset> <!-- ajout de <fieldset> pour regrouper les  éléments de formulaire et les organiser visuellement-->
             <legend>Informations Personnelles</legend>
 
         <!-- l'objectif avoir des champs claires et ordonnés avec la foction table -->
@@ -30,30 +30,25 @@
                     <td><input type="text" id="nom" name="nom" required></td>
                 </tr>
 
-            <li>
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
-            </li>
- 
-        <!-- création du champ avec une zone de saisi de texte age en forme number ave un min et un max-->
+                <tr>
+                    <td><label for="age">Âge :</label></td>
+            <!-- création du champ avec une zone de saisi de texte age en forme number ave un min et un max-->
+                    <td><input type="number" id="age" name="age" min="0" max="200" required></td>
+                </tr>
 
-            <li>
-                <label for="age">Âge :</label>
-                <input type="number" id="age" name="age" min="0" max="200" required>
-            </li>
-
-
-            <!-- ajout Champ Sexe avec un slecteur d'option pour un avoir un champs plsu ergonomique-->
-            <li>
-                <label for="sexe">Sexe :</label>
-        <select id="sexe" name="sexe" required>
-            <option value="">-- Sélectionner --</option>
-            <option value="Homme">Homme</option>
-            <option value="Femme">Femme</option>
-            <option value="Autre">Autre</option>
-            <option value="Non spécifié">Non spécifié</option>
-        </select>
-            </li>
+            <!-- ajout Champ Sexe avec table et un slecteur d'option pour un avoir un champs plsu ergonomique-->
+            <tr>
+            <td><label for="sexe">Sexe :</label></td>
+            <td>
+                <select id="sexe" name="sexe" required>
+                    <option value="">-- Sélectionner --</option>
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                    <option value="Autre">Autre</option>
+                    <option value="Non spécifié">Non spécifié</option>
+                </select>
+            </td>
+            </tr>
 
               <!-- ajout du Champ Email -->
             <li>
